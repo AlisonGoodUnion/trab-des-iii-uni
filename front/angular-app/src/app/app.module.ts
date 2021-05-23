@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MatIconModule } from '@angular/material/icon';
     MenuComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     AppRoutingModule,
     MatMenuModule,
