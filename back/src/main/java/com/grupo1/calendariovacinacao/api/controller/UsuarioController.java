@@ -6,6 +6,7 @@ import com.grupo1.calendariovacinacao.api.controller.resource.VacinaResponse;
 import com.grupo1.calendariovacinacao.core.useCase.BuscarUsuarioUseCase;
 import com.grupo1.calendariovacinacao.dataprovider.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,7 +31,7 @@ class UsuarioController {
 
     @PostMapping
     public ResponseEntity<UsuarioResponse> criarUsuario(@RequestBody UsuarioRequest usuarioRequest) {
-        return ResponseEntity.ok(buscarUsuarioUseCase.criarUsario(usuarioRequest));
+        return new ResponseEntity<>(buscarUsuarioUseCase.criarUsario(usuarioRequest), HttpStatus.CREATED);
     }
 
 }
