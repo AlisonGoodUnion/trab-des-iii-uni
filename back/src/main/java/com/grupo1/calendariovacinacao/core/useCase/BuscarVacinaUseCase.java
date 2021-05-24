@@ -2,7 +2,6 @@ package com.grupo1.calendariovacinacao.core.useCase;
 
 import com.grupo1.calendariovacinacao.api.controller.resource.VacinaResponse;
 import com.grupo1.calendariovacinacao.core.mapper.VacinaMapper;
-import com.grupo1.calendariovacinacao.dataprovider.database.Vacina;
 import com.grupo1.calendariovacinacao.dataprovider.repository.VacinaRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

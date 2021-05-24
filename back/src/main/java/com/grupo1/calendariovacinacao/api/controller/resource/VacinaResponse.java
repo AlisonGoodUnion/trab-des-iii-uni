@@ -1,6 +1,5 @@
 package com.grupo1.calendariovacinacao.api.controller.resource;
 
-import com.grupo1.calendariovacinacao.dataprovider.Dose;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

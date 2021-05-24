@@ -1,7 +1,6 @@
 package com.grupo1.calendariovacinacao.dataprovider.repository;
 
 import com.grupo1.calendariovacinacao.dataprovider.database.Usuario;
-import com.grupo1.calendariovacinacao.dataprovider.database.Vacina;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

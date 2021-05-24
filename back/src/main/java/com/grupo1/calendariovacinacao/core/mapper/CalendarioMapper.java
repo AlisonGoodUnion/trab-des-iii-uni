@@ -4,7 +4,6 @@ import com.grupo1.calendariovacinacao.api.controller.resource.CalendarioResponse
 import com.grupo1.calendariovacinacao.dataprovider.database.Calendario;
 import org.modelmapper.ModelMapper;
 
-
 import java.util.List;
 import java.util.stream.Collectors;
 
