@@ -12,14 +12,14 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-public class UsuarioResponse {
+public class UsuarioRequest {
 
-    private String id;
     private String nome;
     private String cpf;
     private LocalDate dataNascimento;
     private boolean habilitado;
     private String email;
     private String celular;
+    private String senha;
 
 }

@@ -17,8 +17,17 @@ public class BuscarVacinaUseCase {
     private final VacinaRepository vacinaRepository;
 
     public List<VacinaResponse> buscarVacinas(Long usuarioId) {
-        var vacinas = vacinaRepository.findByUsuario_id(usuarioId);
-        return vacinas.stream().map(VacinaMapper::entityToResponse).collect(Collectors.toList());
+        return vacinaRepository.findByUsuario_id(usuarioId)
+                .stream()
+                .map(VacinaMapper::entityToResponse)
+                .collect(Collectors.toList());
+    }
+
+    public List<VacinaResponse> buscarVacinasTotais(Long calendarioId) {
+        return vacinaRepository.findByCalendario_id(calendarioId)
+                .stream()
+                .map(VacinaMapper::entityToResponse)
+                .collect(Collectors.toList());
     }
 
 }

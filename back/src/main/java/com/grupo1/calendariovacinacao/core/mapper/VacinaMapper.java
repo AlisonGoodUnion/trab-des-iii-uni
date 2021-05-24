@@ -13,7 +13,7 @@ public final class VacinaMapper {
 
         var response = new VacinaResponse();
 
-        response.setUsuarioResponse(new UsuarioMapper().entityToResponse(vacina.getUsuario()));
+        response.setUsuario(new UsuarioMapper().entityToResponse(vacina.getUsuario()));
         response.setCalendario(new CalendarioMapper().entityToResponse(vacina.getCalendario()));
         response.setId(vacina.getId());
         response.setDataVacina(vacina.getDataVacina());

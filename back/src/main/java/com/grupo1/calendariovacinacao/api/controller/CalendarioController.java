@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/vacina/calendario")
+@RequestMapping(value = "/api/vacinacao/calendario")
 public class CalendarioController {
 
     @Autowired
@@ -23,7 +23,7 @@ public class CalendarioController {
         return ResponseEntity.ok(buscarCalendarioUseCase.buscar());
     }
 
-    @GetMapping("/{idade}")
+    @GetMapping("/idade/{idade}")
     public ResponseEntity<List<CalendarioResponse>> getQuantidade(@PathVariable Integer idade) {
         return ResponseEntity.ok(buscarCalendarioUseCase.buscarPorIdade(idade));
     }

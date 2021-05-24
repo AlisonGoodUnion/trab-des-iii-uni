@@ -23,8 +23,7 @@ import java.time.LocalDateTime;
 @Getter
 public class Calendario {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id  @GeneratedValue(strategy=GenerationType.IDENTITY)
     private long id;
 
     private LocalDateTime dataInicial;

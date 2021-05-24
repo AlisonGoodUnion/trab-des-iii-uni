@@ -1,20 +1,12 @@
 package com.grupo1.calendariovacinacao.dataprovider.database;
 
+import com.grupo1.calendariovacinacao.dataprovider.Dose;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
@@ -25,8 +17,7 @@ import java.time.LocalDateTime;
 @Getter
 public class Vacina {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id  @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
@@ -39,6 +30,9 @@ public class Vacina {
 
     @Column(name = "data_vacina")
     private LocalDateTime dataVacina;
+
+    @Enumerated(EnumType.STRING)
+    private Dose dose;
 
 
 

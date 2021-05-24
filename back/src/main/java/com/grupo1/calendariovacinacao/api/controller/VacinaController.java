@@ -14,15 +14,20 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/vacina")
+@RequestMapping(value = "/api/vacinacao")
 class VacinaController {
 
     @Autowired
     public BuscarVacinaUseCase buscarVacinaUseCase;
 
-    @GetMapping("/{usuarioId}")
-    public ResponseEntity<List<VacinaResponse>> getQuantidade(@PathVariable Long usuarioId) {
+    @GetMapping("/usuario/{usuarioId}")
+    public ResponseEntity<List<VacinaResponse>> getQuantidadePorUsuario(@PathVariable Long usuarioId) {
         return ResponseEntity.ok(buscarVacinaUseCase.buscarVacinas(usuarioId));
+    }
+
+    @GetMapping("/quantidade/calendario/{calendarioId}")
+    public ResponseEntity<List<VacinaResponse>> getQuantidadePorCalendario(@PathVariable Long calendarioId) {
+        return ResponseEntity.ok(buscarVacinaUseCase.buscarVacinasTotais(calendarioId));
     }
 
 }

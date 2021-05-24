@@ -30,8 +30,7 @@ import java.util.Set;
 @Getter
 public class Usuario {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id  @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
 
     private String nome;
@@ -46,5 +45,7 @@ public class Usuario {
     private String email;
 
     private String celular;
+
+    private String senha;
 
 }
