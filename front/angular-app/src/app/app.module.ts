@@ -27,11 +27,11 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     NgbModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MaterializeModule,
     routing,
     FormsModule,
-    HttpClientModule
   ],
   providers: [
     AuthService

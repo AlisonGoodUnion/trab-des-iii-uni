@@ -1,4 +1,5 @@
-import {EventEmitter, Injectable } from '@angular/core';
+import {EventEmitter, Injectable} from '@angular/core';
+import { Observable, throwError } from 'rxjs';
 import {Usuario} from "./usuario";
 import {Router} from "@angular/router";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
@@ -14,7 +15,7 @@ export class AuthService {
 
   autenticadoEmitter = new EventEmitter<boolean>();
 
-  constructor(private router: Router, private _http : HttpClient) { }
+  constructor(private router: Router, private http : HttpClient) { }
 
   fazerLogin(usuario: Usuario) {
     if(!usuario.cpf) {
@@ -26,11 +27,10 @@ export class AuthService {
       this.autenticadoEmitter.emit(false)
     }
 
-    this._http.get('/api').subscribe(
-      response => response === HttpErrorResponse ?
-        console.log('Login invalido') :
-        console.log(response)
-    );
+    this.http.get(`/api/usuario/login?cpf=${usuario.cpf}&senha=${usuario.senha}`)
+      .subscribe((returnedStuff) => {
+        console.log(returnedStuff);
+      });
 
     this.usuarioAutenticado = true;
     this.autenticadoEmitter.emit(true)
