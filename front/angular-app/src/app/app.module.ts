@@ -12,6 +12,9 @@ import { MaterializeModule } from 'angular2-materialize';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {routing} from './app.routing';
+import { AuthService } from './login/auth.service';
+import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,11 +27,15 @@ import {routing} from './app.routing';
   imports: [
     NgbModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     MaterializeModule,
-    routing
+    routing,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

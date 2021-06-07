@@ -1,0 +1,77 @@
+.h3-covid {
+  /* COVID-19 no Brasil */
+  overflow-x: scroll;
+  position: absolute;
+  height: 104px;
+  left: 9.38%;
+  right: 9.38%;
+  top: 244px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 104px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -3px;
+
+  border-radius: 10px;
+  color: #2D3436;
+  text-shadow: 0 4px 0 #000000;
+}
+
+nav .brand-logo.right {
+  right: 0.5rem;
+  padding: 0 15px 60px 19px;
+
+  text-align: center;
+}
+
+.btn-registre {
+  /* BG */
+
+
+  position: absolute;
+  left: 78.82%;
+  right: 8.33%;
+  top: 19.67%;
+  bottom: 27.87%;
+
+  /* Purple / Dark */
+
+  background: #6C5CE7;
+  border-radius: 25px;
+
+}
+
+nav .nav-wrapper {
+  background: #FFFFFF;
+  height: 80px;
+  box-shadow: black 0.5em 0.2em 0.3em
+
+}
+
+nav ul a {
+  position: absolute;
+  left: 6.25%;
+  right: 70.58%;
+  top: 8.2%;
+  bottom: 0%;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 35px;
+  /* or 156% */
+
+  text-align: center;
+  letter-spacing: -1px;
+
+  /* Black */
+
+  color: #2D3436;
+}

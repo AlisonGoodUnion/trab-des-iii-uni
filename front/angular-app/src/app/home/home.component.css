@@ -1,0 +1,88 @@
+.body-style {
+  /*position: absolute;*/
+  /*width: 1440px;*/
+  /*height: 1146px;*/
+  /*left: 0px;*/
+  /*top: 0px;*/
+  /**/
+  /*background: #FFFFFF;*/
+}
+
+.p1-style {
+  /* COVID-19 no Brasil */
+  position: absolute;
+  height: 104px;
+  left: 9.38%;
+  right: 9.38%;
+  top: 244px;
+
+  /* 96 sp • H1 Heading */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 104px;
+  /* identical to box height, or 108% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -3px;
+
+  /* Black */
+
+  color: #2D3436;
+
+  /* Text Shadow / White */
+
+  text-shadow: 0px 4px 0px #FFFFFF;
+}
+
+.p2-style {
+  position: absolute;
+  height: 55px;
+  left: 23.26%;
+  right: 23.26%;
+  top: 416px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.p3-style {
+  position: absolute;
+  width: 229px;
+  height: 394px;
+  left: 224px;
+  top: 559px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  /* or 120% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  color: #000000;
+}
+
+.image-style {
+  position: absolute;
+  width: 822px;
+  height: 471px;
+  left: 483px;
+  top: 521px;
+}
