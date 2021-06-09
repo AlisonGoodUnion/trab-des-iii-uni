@@ -1,11 +1,11 @@
 .body-style {
-  /*position: absolute;*/
-  /*width: 1440px;*/
-  /*height: 1146px;*/
-  /*left: 0px;*/
-  /*top: 0px;*/
-  /**/
-  /*background: #FFFFFF;*/
+  position: absolute;
+  width: 1440px;
+  height: 1146px;
+  left: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
 }
 
 .p1-style {
@@ -86,3 +86,5 @@
   left: 483px;
   top: 521px;
 }
+
+

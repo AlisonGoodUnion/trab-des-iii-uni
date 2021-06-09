@@ -1,0 +1,113 @@
+.footer {
+  position: absolute;
+  width: 649px;
+  height: 331px;
+  left: 362px;
+  top: 1040px;
+  background: #FFFFFF;
+
+  /* 12 sp • MINICAPS */
+
+
+}
+
+.title {
+  font-family: Inter, serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+
+  /* 32% Gray Light */
+
+  color: #6c6c6c;
+}
+
+.button-style {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  /* or 150% */
+  position: absolute;
+
+  left: 16px;
+  right: 16px;
+  top: 8px;
+  bottom: 8px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  /* White */
+
+
+
+  /* 2 dp • Dark shadow */
+
+  text-shadow: 0px 2px 4px rgba(38, 50, 56, 0.16), 0px 4px 8px rgba(38, 50, 56, 0.08)
+}
+
+.font-color {
+  color: black;
+}
+
+.name {
+  /* 24% Gray Soft */
+
+  background-color: #c4c4c4;
+  opacity: 0.24;
+  border-radius: 16px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  /* identical to box height, or 178% */
+
+  color: black;
+}
+
+.mail {
+  background: #C2C2C2;
+  opacity: 0.24;
+  border-radius: 16px;
+}
+.text-area {
+  background: #C2C2C2;
+  opacity: 0.24;
+  /* Purple / Dark */
+
+  border: 2px solid #6C5CE7;
+  border-radius: 16px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  /* or 178% */
+
+  letter-spacing: 0.2px;
+
+  /* Purple / Dark */
+
+  color: #6C5CE7;
+}
+.btn-enviar {
+  /* Purple / Dark */
+
+  background: #6C5CE7;
+  /* 16 dp • Dark shadow */
+
+  box-shadow: 0px 8px 24px rgba(38, 50, 56, 0.1), 0px 16px 32px rgba(38, 50, 56, 0.08);
+  border-radius: 16px;
+}
