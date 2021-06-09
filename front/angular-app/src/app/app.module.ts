@@ -16,6 +16,7 @@ import { AuthService } from './login/auth.service';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { FooterComponent } from './footer/footer.component';
+import { RegistrarComponent } from './registrar/registrar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     MenuComponent,
     HomeComponent,
     DashboardComponent,
-    FooterComponent
+    FooterComponent,
+    RegistrarComponent
   ],
   imports: [
     NgbModule,
