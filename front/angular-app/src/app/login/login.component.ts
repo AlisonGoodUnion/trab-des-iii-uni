@@ -15,6 +15,9 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.usuario.cpf = '03190462062';
+    this.usuario.senha = '12345';
+
   }
 
   fazerLogin() {

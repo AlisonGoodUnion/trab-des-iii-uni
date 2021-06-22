@@ -1,0 +1,25 @@
+<br><br><br>
+<div>
+  <h2>Calendario de Vacinação</h2>
+</div>
+
+<div class="row">
+  <div class="input-field col s12 idade">
+    <input [(ngModel)]="calendario.idade" value=""
+           id="idade" type="text" class="validate">
+    <label class="active" for="idade">IDADE</label>
+  </div>
+</div>
+<div class="row">
+  <div class="input-field col s12 estado">
+    <input [(ngModel)]="calendario.estado" value="" id="estado" type="text" class="validate">
+    <label class="active" for="estado">ESTADO</label>
+  </div>
+</div>
+<br>
+<div>
+<!--  <igx-calendar selection="multi" [showWeekNumbers]="true"></igx-calendar>-->
+</div>
+<app-footer></app-footer>
+
+

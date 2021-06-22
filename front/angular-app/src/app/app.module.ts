@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, HammerModule} from '@angular/platform-browser';
 
 import 'materialize-css';
 
@@ -17,6 +17,9 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { FooterComponent } from './footer/footer.component';
 import { RegistrarComponent } from './registrar/registrar.component';
+import { CalendarioComponent } from './calendario/calendario.component';
+import { ComprovantesComponent } from './comprovantes/comprovantes.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,12 @@ import { RegistrarComponent } from './registrar/registrar.component';
     HomeComponent,
     DashboardComponent,
     FooterComponent,
-    RegistrarComponent
+    RegistrarComponent,
+    CalendarioComponent,
+    ComprovantesComponent,
+    // BrowserAnimationsModule,
+    // HammerModule,
+    // IgxCalendarModule
   ],
   imports: [
     NgbModule,
