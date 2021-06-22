@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Usuario} from '../login/usuario';
 
 @Component({
   selector: 'app-comprovantes',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./comprovantes.component.css']
 })
 export class ComprovantesComponent implements OnInit {
+  usuario: Usuario;
+
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

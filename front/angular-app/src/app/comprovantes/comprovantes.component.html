@@ -4,6 +4,17 @@
 </div>
 <br><br><br>
 <div>
+
+  <div class="row">
+    <div class="input-field col s12 estado">
+      <label class="active" for="estado">CPF</label>
+      <input [(ngModel)]="usuario.cpf"  value="" id="estado" type="text" class="validate">
+        <a class="btn btn-enviar" ><i class="material-icons center">search</i></a>
+
+    </div>
+
+  </div>
+
   <h3 class="title">1º dose</h3>
   <a class="waves-effect waves-light btn-small">
     <h5 class="title">Baixar comprovante
@@ -20,4 +31,9 @@
 <!--      <i class="material-icons right">file_download</i>-->
     </h5>
   </a>
+  <div class="row">
+    <div id="footer" class="footer">
+      <app-footer></app-footer>
+    </div>
+  </div>
 </div>
