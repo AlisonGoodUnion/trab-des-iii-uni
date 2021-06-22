@@ -34,6 +34,16 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 .footer {
-  padding-bottom: 300px;
+  position: absolute;
+  width: 0px;
+  height: 31px;
+  top: 100px;
+  background: #FFFFFF;
+}
 
+
+.image-style {
+align-content: center;
+  width: 685px;
+  height: 623px;
 }
